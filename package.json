@@ -1,0 +1,25 @@
+{
+  "name": "css-modules-for-create-react-app",
+  "version": "0.1.0",
+  "description": "Use CSS Modules in create-react-app without ejecting!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "app",
+    "create",
+    "create-react-app",
+    "css",
+    "eject",
+    "modules",
+    "react",
+    "reactjs"
+  ],
+  "author": "Nikola Pilipovic <https://github.com/nikoladev>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "node-emoji": "^1.5.1"
+  }
+}
