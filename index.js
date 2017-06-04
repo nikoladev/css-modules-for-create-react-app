@@ -14,7 +14,7 @@ const checkVersion = () => {
   const filePath = path.join(process.cwd(), 'node_modules', 'react-scripts', 'package.json')
   getPackageVersion(filePath, (versionString) => {
     if (safeVersions.indexOf(versionString) < 0) {
-      console.error(`${chalk.bold.inverse.yellow('!!!')} The current version of ${chalk.bold('react-scripts')} (${versionString}) is not supported by this version of ${chalk.bold('css-modules-for-create-react-app')}.`)
+      console.error(emoji.get('warning'), ` The current version of ${chalk.bold('react-scripts')} (${versionString}) is not supported by this version of ${chalk.bold('css-modules-for-create-react-app')}.`)
       return
     } else {
       replace()
