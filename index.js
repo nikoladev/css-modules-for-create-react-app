@@ -1,7 +1,3 @@
-// TODO: check if the file isn't already modified so that you don't add the lines again
-// Have to JSON.parse and JSON.serialize for this, I guess
-// TODO: list of safe versions is hardcoded now. Get that list from a different npm package which you can keep updated
-
 const fs = require('fs')
 const path = require('path')
 const chalk = require('chalk')
@@ -16,9 +12,9 @@ const checkVersion = () => {
     if (safeVersions.indexOf(versionString) < 0) {
       console.error(emoji.get('warning'), ` The current version of ${chalk.bold('react-scripts')} (${versionString}) is not supported by this version of ${chalk.bold('css-modules-for-create-react-app')}.`)
       return
-    } else {
-      replace()
     }
+
+    replace()
   })
 }
 
